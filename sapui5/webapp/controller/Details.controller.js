@@ -15,6 +15,7 @@ sap.ui.define([
         return Controller.extend("logaligroup.sapui5.controller.Details", {
 
             _onObjectMatch: function (oEvent) {
+                var test;
                 this.byId("rating").reset();
                 this.getView().bindElement({
                     path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").invoicePath),
